@@ -148,7 +148,8 @@ nav a {
 .carousel-container {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
+    padding:  3rem;
 }
 
 .productos {
@@ -157,6 +158,8 @@ nav a {
     scroll-behavior: smooth;
     gap: 2rem;
     padding: 1rem;
+    margin: 1rem;
+    background: white;
 }
 
 .carousel-button {
@@ -182,15 +185,15 @@ nav a {
 }
 
 .carousel-button.prev {
-    left: 0;
+    left: -3rem;
 }
 
 .carousel-button.next {
-    right: 0;
+    right: -3rem;
 }
 
 .producto {
-    min-width: calc((100% - 4rem) / 3);
+    min-width: calc((100% - 3rem) / 3);
     background: #f66117;
     padding: 1rem;
     border-radius: 8px;
@@ -311,8 +314,47 @@ footer {
         justify-content: center;
     }
 
+    .logo {
+        height: 120px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
     .producto {
         min-width: calc((100% - 2rem) / 2);
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-button.prev {
+        left: -2rem;
+    }
+    
+    .carousel-button.next {
+        right: -2rem;
+    }
+
+    .catalogo {
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+    
+    .productos {
+        gap: 1rem;
+    }
+    
+    .banner-verano {
+        height: 300px;
+        margin: 2rem 0;
     }
 }
 
@@ -331,5 +373,39 @@ footer {
 
     nav {
         gap: 0;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-button {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .carousel-button.prev {
+        left: -1.5rem;
+    }
+    
+    .carousel-button.next {
+        right: -1.5rem;
+    }
+
+    .catalogo {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+    
+    .banner-content h2 {
+        font-size: 2rem;
     }
 }
