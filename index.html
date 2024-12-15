@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Escobedo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-section nav-left">
+                <a href="#">MUJER</a>
+                <a href="#">HOMBRE</a>
+                <a href="#">NIÑOS</a>
+            </div>
+            <div>
+                <img src="./assets/OPTICA.png" alt="Óptica Escobedo" class="logo">
+            </div>
+            <div class="nav-section nav-right">
+                <span class="direccion">Germán Riesco 292-B, Rancagua</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="./assets/banner-optica.png" alt="Hero imagen">
+                </div>
+                <div class="hero-text">
+                    <h1>CONSULTA Y COTIZA</h1>
+                    <a href="https://api.whatsapp.com/send?phone=56942088389&text=Hola,%20quisiera%20consultar%20por%20lentes%20en%20Óptica%20Escobedo" class="whatsapp-button" target="_blank">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <h2>CATÁLOGO HOMBRE</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="moveCarousel(-1, 'carousel1')">&#10094;</button>
+                <div class="productos" id="carousel1">
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 01">
+                        <h3>ARMAZÓN 01</h3>
+                        <p>5 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 02">
+                        <h3>ARMAZÓN 02</h3>
+                        <p>3 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 03">
+                        <h3>ARMAZÓN 03</h3>
+                        <p>4 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 04">
+                        <h3>ARMAZÓN 04</h3>
+                        <p>3 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 05">
+                        <h3>ARMAZÓN 05</h3>
+                        <p>4 COLORES</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1, 'carousel1')">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <h2>CATÁLOGO MUJER</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="moveCarousel(-1, 'carousel2')">&#10094;</button>
+                <div class="productos" id="carousel2">
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 01">
+                        <h3>ARMAZÓN 01</h3>
+                        <p>5 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 02">
+                        <h3>ARMAZÓN 02</h3>
+                        <p>6 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 03">
+                        <h3>ARMAZÓN 03</h3>
+                        <p>6 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 04">
+                        <h3>ARMAZÓN 04</h3>
+                        <p>5 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 05">
+                        <h3>ARMAZÓN 05</h3>
+                        <p>4 COLORES</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1, 'carousel2')">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <h2>CATÁLOGO NIÑOS</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="moveCarousel(-1, 'carousel3')">&#10094;</button>
+                <div class="productos" id="carousel3">
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 01">
+                        <h3>ARMAZÓN 01</h3>
+                        <p>5 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 02">
+                        <h3>ARMAZÓN 02</h3>
+                        <p>6 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 03">
+                        <h3>ARMAZÓN 03</h3>
+                        <p>6 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 04">
+                        <h3>ARMAZÓN 04</h3>
+                        <p>5 COLORES</p>
+                    </div>
+                    <div class="producto">
+                        <img src="/api/placeholder/300/300" alt="Armazón 05">
+                        <h3>ARMAZÓN 05</h3>
+                        <p>4 COLORES</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1, 'carousel3')">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="banner-verano">
+            <div class="banner-content">
+                <h2>ESPECIAL</h2>
+                <h2>VERANO</h2>
+                <h2 class="descubrelos">DESCÚBRELOS</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PRODUCTOS</h3>
+                <ul>
+                    <li>LENTES DE HOMBRE</li>
+                    <li>LENTES DE MUJER</li>
+                    <li>LENTES DE NIÑOS</li>
+                    <li>LENTES CLIP-ON</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li>GERMÁN RIESCO 292-B</li>
+                    <li>+569 4208 8389</li>
+                    <li>opticaescobedo@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SÍGUENOS</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/opti.escobedo_spa/">Instagram</a>
+                    <a href="https://www.facebook.com/people/Opticas-Escobedo/">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function moveCarousel(direction, carouselId) {
+            const container = document.getElementById(carouselId);
+            const scrollAmount = container.offsetWidth;
+            container.scrollBy({ left: direction * scrollAmount / 3, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
