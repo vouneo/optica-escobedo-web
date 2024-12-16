@@ -228,7 +228,7 @@ nav a {
 /* Banner Verano */
 .banner-verano {
     height: 400px;
-    background: url('./assets/banner-sol.jpg') center 20%/cover;
+    background: url('./assets/banner-promo.png') 70% 40%/cover;
     position: relative;
     margin: 4rem auto;
     max-width: 1200px; 
@@ -239,12 +239,11 @@ nav a {
 .banner-content {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.3);
+    /* background: rgba(0,0,0,0.3); */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 2rem; 
+    justify-content: flex-start; /* Cambiado a flex-start para alinear a la izquierda */
+    align-items: flex-start; /* Cambiado a flex-start para alinear arriba */
+    padding: 2rem;
 }
 
 .banner-content h2 {
@@ -254,9 +253,39 @@ nav a {
     font-weight: 600;
 }
 
-.descubrelos {
+/* .descubrelos {
     color: #ffc107;
+} */
+
+/* .promocion {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+} */
+
+/* .promocion h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+} */
+
+/* .descuento {
+    color: #f66117 !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
 }
+
+.condiciones {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-transform: none;
+} */
+
+/* .verano-text {
+    text-align: right;
+} */
 
 /* Footer */
 footer {
@@ -326,6 +355,11 @@ footer {
     .direccion {
         display: none;
     }
+
+    /* Ajustes banner promoción */
+    .banner-content {
+        padding: 1.8rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -350,8 +384,8 @@ footer {
     .hero {
         height: 500px;
         position: relative;
-        max-width: 1200px; /* Añadido */
-        margin: 0 auto; /* Añadido */
+        max-width: 1200px;
+        margin: 0 auto;
         padding: 0 1rem;
     }
 
@@ -388,6 +422,23 @@ footer {
     .banner-verano {
         height: 300px;
         margin: 2rem 0;
+    }
+
+    /* Ajustes banner promoción */
+    .banner-content {
+        padding: 1.5rem;
+    }
+    
+    .promocion {
+        padding: 1.5rem 2rem;
+    }
+
+    .promocion h2 {
+        font-size: 1.5rem;
+    }
+
+    .descuento {
+        font-size: 2.5rem !important;
     }
 }
 
@@ -437,8 +488,25 @@ footer {
         margin: 1.5rem auto;
         padding: 0 1rem;
     }
+
+    /* Ajustes banner promoción */
+    .banner-content {
+        padding: 1rem;
+    }
     
-    .banner-content h2 {
-        font-size: 2rem;
+    .promocion {
+        padding: 1rem 1.5rem;
+    }
+
+    .promocion h2 {
+        font-size: 1.2rem;
+    }
+
+    .descuento {
+        font-size: 2rem !important;
+    }
+
+    .condiciones {
+        font-size: 0.8rem;
     }
 }
